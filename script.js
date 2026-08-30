@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initThemeToggle() {
   const themeToggle = document.getElementById('themeToggle');
   const storedTheme = localStorage.getItem('portfolio-theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
-  const currentTheme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+  const currentTheme = storedTheme || 'light';
   applyTheme(currentTheme);
 
   if (themeToggle) {
