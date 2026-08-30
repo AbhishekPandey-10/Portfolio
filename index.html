@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Pandey — The Pitch</title>
+  <meta name="description" content="Personal portfolio for Abhishek Pandey — B.Tech CSE @ LPU, AI Agent Builder, Full-Stack Developer, and Football Analytics Enthusiast.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('portfolio-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Mesh Backdrop -->
+  <div class="ambient-mesh" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="pitch-toast" id="pitchToast">Tactical link copied to clipboard</div>
+
+  <!-- Top Scroll Progress Indicator Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Sticky Header -->
+  <header class="pitch-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#hero" class="brand-badge">
+          <span class="pitch-dot"></span>
+          <span>Abhishek Pandey</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#formation" class="nav-link">Formation</a></li>
+          <li><a href="#highlights" class="nav-link">Highlights</a></li>
+          <li><a href="#transfers" class="nav-link">Transfers</a></li>
+          <li><a href="#season-stats" class="nav-link">Season Stats</a></li>
+          <li><a href="#extratime" class="nav-link">Contact</a></li>
+          <li><a href="opportunities.html" class="nav-link nav-link--available" title="View Scouting Dossier & Open Roles">Available ↗</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Night/Day match mode" title="Switch dark/light theme">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+
+          <a href="assets/Abhishek_Pandey_CV.pdf" download="Abhishek_Pandey_CV.pdf" target="_blank" class="nav-cv-btn font-mono" title="Download CV (PDF)">
+            <span>CV</span>
+            <span>↓</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 1. Corner flag & kickoff doodle -->
+        <div class="bg-doodle doodle-rot-neg" style="top: 8%; left: 3%;">
+          <svg class="doodle-svg" width="28" height="28" viewBox="0 0 28 28">
+            <line x1="6" y1="4" x2="6" y2="24" stroke-width="1.6"/>
+            <polygon points="6,4 20,8 6,13" fill="currentColor" opacity="0.35" stroke-width="1.2"/>
+            <path d="M 12 18 Q 18 16 23 20" stroke-width="1.4" stroke-dasharray="2 2"/>
+            <polyline points="21,17 24,20 20,22" stroke-width="1.4"/>
+          </svg>
+          <span>kickoff // 00:00</span>
+        </div>
+
+        <!-- 2. Dev keycap doodle -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-pos" style="top: 12%; right: 3%;">
+          <span class="doodle-kbd">⌘ + K</span>
+          <span class="doodle-pun">tactical palette</span>
+          <svg class="doodle-svg" width="22" height="14" viewBox="0 0 22 14">
+            <path d="M 2 10 Q 10 2 18 8" stroke-width="1.3"/>
+            <polyline points="15,4 19,8 15,11" stroke-width="1.3"/>
+          </svg>
+        </div>
+
+        <!-- 3. Circuit trace with USB/Nodes -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-neg" style="top: 72%; left: 2%;">
+          <svg class="doodle-svg" width="54" height="22" viewBox="0 0 54 22">
+            <circle cx="5" cy="11" r="3" stroke-width="1.3"/>
+            <line x1="8" y1="11" x2="18" y2="11" stroke-width="1.3"/>
+            <path d="M 18 11 L 22 5 L 30 5 L 34 11" stroke-width="1.3"/>
+            <rect x="34" y="7" width="12" height="8" rx="2" stroke-width="1.3"/>
+            <circle cx="50" cy="11" r="2" fill="currentColor"/>
+          </svg>
+          <span>// 127.0.0.1:8000</span>
+        </div>
+
+        <!-- 4. Dev Pun -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-pos" style="bottom: 6%; right: 4%;">
+          <svg class="doodle-svg" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M 3 13 C 3 6, 10 4, 14 9" stroke-width="1.4" stroke-dasharray="2 2"/>
+            <polyline points="11,9 14,10 14,7" stroke-width="1.4"/>
+          </svg>
+          <span class="doodle-pun">// it worked on localhost : )</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left: Editorial Headline & Bio -->
+          <div class="hero-content">
+            <div class="hero-tag font-mono">
+              <span>●</span>
+              <span>DEPLOYING SINCE KICKOFF</span>
+            </div>
+
+            <h1 class="hero-name font-serif">
+              Abhishek<br>
+              <em>Pandey.</em>
+            </h1>
+
+            <div class="hero-tagline font-serif">
+              Full-Stack. Full Pitch.
+            </div>
+
+            <p class="hero-subhead font-mono">
+              B.Tech CSE @ LPU (CGPA 8.76) · AI Agent Builder · Distributed Systems & Football Analytics Enthusiast.
+            </p>
+
+            <p class="formation-bio" style="margin-bottom: 2rem; max-width: 34rem;">
+              I build autonomous AI agent swarms, high-throughput backend services, and sports analytics pipelines. Fusing deep computational fundamentals with the tactical spatial awareness of a midfield orchestrator.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#formation" class="btn-primary magnetic-btn">
+                <span>Explore Lineup</span>
+                <span>→</span>
+              </a>
+              <a href="assets/Abhishek_Pandey_CV.pdf" download="Abhishek_Pandey_CV.pdf" target="_blank" class="btn-cv magnetic-btn">
+                <span>Download CV</span>
+                <span>↓</span>
+              </a>
+              <a href="opportunities.html" class="btn-secondary magnetic-btn">
+                <span>Opportunities ↗</span>
+              </a>
+              <button class="btn-secondary contact-pill-copy" onclick="copyContact('abhishekpandey1951@gmail.com', 'Email')">
+                <span class="font-mono text-xs">abhishekpandey1951@gmail.com</span>
+              </button>
+            </div>
+
+            <div class="font-mono text-xs text-muted">
+              <code>// Gorakhpur, UP ↔ Phagwara, Punjab</code>
+            </div>
+          </div>
+
+          <!-- Right: Treated Duotone Portrait & Glass Badge -->
+          <div class="hero-visual-wrapper">
+            <div class="portrait-container">
+              <img 
+                src="assets/abhishek_portrait.jpg" 
+                alt="Abhishek Pandey" 
+                class="portrait-img"
+              >
+            </div>
+
+            <div class="hero-glass-badge">
+              <!-- Tactical Scout Beacon Signal -->
+              <div class="stroke-signaling signal-beacon" style="position: absolute; top: -16px; right: 12px; z-index: 10;">
+                <span class="beacon-pulse"></span>
+                <span class="font-mono text-xs" style="color: var(--accent-forest); font-weight: 700;">BEACON ACTIVE [4-3-3]</span>
+              </div>
+
+              <div class="badge-header font-mono">
+                <span>FORM_GUIDE: W-W-W-W</span>
+                <a href="opportunities.html" class="badge-status badge-status--link" title="Inspect transfer dossier & roles">AVAILABLE ↗</a>
+              </div>
+              <div class="badge-text">
+                "Committed to clean code (and clean tackles)."
+              </div>
+            </div>
+
+            <!-- Single-Stroke Continuous Kicker & Trajectory -->
+            <div class="stroke-signaling single-stroke-figure" style="position: absolute; bottom: -44px; right: -20px; z-index: 4;" title="Single-stroke strike">
+              <svg class="single-stroke-svg" width="96" height="52" viewBox="0 0 96 52">
+                <path d="M 8 42 C 16 42, 22 36, 28 30 C 32 25, 38 27, 44 22 C 48 18, 50 11, 46 6 C 42 1, 34 3, 30 8 C 26 13, 22 20, 14 22 C 8 24, 4 32, 8 42 C 20 42, 38 38, 50 33 C 62 28, 68 24, 74 15 M 74 15 C 80 9, 86 13, 82 18 C 78 22, 72 20, 74 15" stroke-width="1.6"/>
+                <path d="M 50 33 Q 60 42 72 38" stroke-width="1.2" stroke-dasharray="2 2"/>
+                <circle cx="74" cy="38" r="3" stroke-width="1.4"/>
+              </svg>
+              <span class="signal-callout-text font-mono text-xs">// fluid_strike</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. THE FORMATION (FIFA Player Cards)
+         ========================================================================== -->
+    <section id="formation" class="section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 5. Tactical X & O High Press vector -->
+        <div class="bg-doodle doodle-rot-pos" style="top: 5%; left: 3%;">
+          <svg class="doodle-svg" width="60" height="30" viewBox="0 0 60 30">
+            <line x1="6" y1="6" x2="16" y2="16" stroke-width="1.6"/>
+            <line x1="16" y1="6" x2="6" y2="16" stroke-width="1.6"/>
+            <path d="M 18 11 Q 30 4 40 14" stroke-width="1.4" stroke-dasharray="3 2"/>
+            <polyline points="36,11 41,15 37,17" stroke-width="1.4"/>
+            <circle cx="50" cy="18" r="6" stroke-width="1.6"/>
+          </svg>
+          <span>high press // overlap</span>
+        </div>
+
+        <!-- 6. Referee Yellow & Red cards -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-neg" style="top: 6%; right: 3%;">
+          <svg class="doodle-svg" width="26" height="22" viewBox="0 0 26 22">
+            <rect x="2" y="3" width="9" height="14" rx="1.5" stroke-width="1.4" fill="currentColor" opacity="0.3"/>
+            <rect x="8" y="2" width="9" height="14" rx="1.5" stroke-width="1.4" transform="rotate(15 13 9)"/>
+          </svg>
+          <span>// 0 bookings</span>
+        </div>
+
+        <!-- 7. Vim save keycap -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-neg" style="bottom: 5%; left: 3%;">
+          <span class="doodle-kbd">:wq</span>
+          <span class="doodle-pun">// save lineup</span>
+        </div>
+
+        <!-- 8. Free-kick curling arc -->
+        <div class="bg-doodle doodle-rot-pos" style="bottom: 5%; right: 3%;">
+          <svg class="doodle-svg" width="38" height="24" viewBox="0 0 38 24">
+            <path d="M 4 20 C 14 20, 26 12, 32 4" stroke-width="1.4" stroke-dasharray="2.5 2"/>
+            <circle cx="33" cy="4" r="2.5" fill="currentColor"/>
+          </svg>
+          <span class="doodle-pun">curl: 99% ⚽</span>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-label">
+            <span>// 01</span>
+            <span>THE FORMATION</span>
+            <span class="signal-radar-tag font-mono" style="margin-left: 0.6rem;">
+              <span>⌖</span>
+              <span>GRID RADAR: 4-3-3 OVERLOAD</span>
+            </span>
+          </div>
+          <h2 class="section-title font-serif">Starting XI — Player Cards</h2>
+        </div>
+
+        <!-- Single-Stroke Card Flip Signaling Callout -->
+        <div class="stroke-signaling" style="position: relative; margin-bottom: 0.6rem; justify-content: flex-end;">
+          <svg class="single-stroke-svg" width="36" height="20" viewBox="0 0 36 20" style="color: var(--accent-terracotta);">
+            <path d="M 4 3 C 16 3, 28 5, 32 14" stroke-width="1.6"/>
+            <polyline points="27,11 32,15 35,9" stroke-width="1.6"/>
+          </svg>
+          <span class="signal-callout-text font-mono">click cards to flip stats ↻</span>
+        </div>
+
+        <div class="fifa-grid">
+
+          <!-- Card 1: GK — Silver -->
+          <div class="fifa-card fifa-card--silver" data-pos="gk" onclick="flipCard(this)" tabindex="0" role="button" aria-label="Toggle Git & DevOps player card">
+            <div class="fifa-card-inner">
+              <div class="fifa-card-front">
+                <div class="fifa-card-shine"></div>
+                <div class="fifa-card-top">
+                  <div class="fifa-card-rating font-serif">78</div>
+                  <div class="fifa-card-pos font-mono">GK</div>
+                </div>
+                <div class="fifa-card-center">
+                  <div class="fifa-card-emblem">
+                    <span class="fifa-card-emblem-pos">GK</span>
+                  </div>
+                </div>
+                <div class="fifa-card-bottom">
+                  <div class="fifa-card-name font-mono">GIT &amp; DEVOPS</div>
+                  <div class="fifa-card-divider"></div>
+                  <div class="fifa-card-stats">
+                    <div class="fifa-stat font-mono"><span>VER</span><span>82</span></div>
+                    <div class="fifa-stat font-mono"><span>REL</span><span>80</span></div>
+                    <div class="fifa-stat font-mono"><span>DEP</span><span>75</span></div>
+                  </div>
+                </div>
+                <div class="fifa-card-hint font-mono">click to flip</div>
+              </div>
+              <div class="fifa-card-back">
+                <div class="fifa-back-pos font-mono">GK · #01</div>
+                <h3 class="fifa-back-title font-serif">Reliability, Safety Net &amp; DevOps</h3>
+                <p class="fifa-back-desc font-mono">Last line of defense. Deterministic builds, clean Git workflows, robust CI/CD checks, and zero-downtime stability.</p>
+                <div class="fifa-back-pills">
+                  <span class="fifa-pill">Git &amp; GitHub</span>
+                  <span class="fifa-pill">DevOps Habits</span>
+                  <span class="fifa-pill">Linux / Bash</span>
+                  <span class="fifa-pill">VS Code</span>
+                  <span class="fifa-pill">Auto Testing</span>
+                </div>
+                <div class="fifa-back-hint font-mono">click to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: CB — Silver -->
+          <div class="fifa-card fifa-card--silver" data-pos="def" onclick="flipCard(this)" tabindex="0" role="button" aria-label="Toggle SQL & Database player card">
+            <div class="fifa-card-inner">
+              <div class="fifa-card-front">
+                <div class="fifa-card-shine"></div>
+                <div class="fifa-card-top">
+                  <div class="fifa-card-rating font-serif">83</div>
+                  <div class="fifa-card-pos font-mono">CB</div>
+                </div>
+                <div class="fifa-card-center">
+                  <div class="fifa-card-emblem">
+                    <span class="fifa-card-emblem-pos">CB</span>
+                  </div>
+                </div>
+                <div class="fifa-card-bottom">
+                  <div class="fifa-card-name font-mono">SQL &amp; DATABASE</div>
+                  <div class="fifa-card-divider"></div>
+                  <div class="fifa-card-stats">
+                    <div class="fifa-stat font-mono"><span>QRY</span><span>84</span></div>
+                    <div class="fifa-stat font-mono"><span>SCH</span><span>83</span></div>
+                    <div class="fifa-stat font-mono"><span>TXN</span><span>85</span></div>
+                  </div>
+                </div>
+                <div class="fifa-card-hint font-mono">click to flip</div>
+              </div>
+              <div class="fifa-card-back">
+                <div class="fifa-back-pos font-mono">CB · #04</div>
+                <h3 class="fifa-back-title font-serif">Relational Foundations &amp; SQL Architecture</h3>
+                <p class="fifa-back-desc font-mono">Uncompromising structural integrity. ACID transactions, index optimization, normalized schemas, rock-solid data layers.</p>
+                <div class="fifa-back-pills">
+                  <span class="fifa-pill">SQL</span>
+                  <span class="fifa-pill">MySQL</span>
+                  <span class="fifa-pill">DB Normalization</span>
+                  <span class="fifa-pill">Relational Schemas</span>
+                  <span class="fifa-pill">Transactions</span>
+                </div>
+                <div class="fifa-back-hint font-mono">click to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: CAM — Special (Star Player) -->
+          <div class="fifa-card fifa-card--special" data-pos="mid" onclick="flipCard(this)" tabindex="0" role="button" aria-label="Toggle AI Agents player card">
+            <div class="fifa-card-inner">
+              <div class="fifa-card-front">
+                <div class="fifa-card-shine"></div>
+                <div class="fifa-card-top">
+                  <div class="fifa-card-rating font-serif">87</div>
+                  <div class="fifa-card-pos font-mono">CAM</div>
+                </div>
+                <div class="fifa-card-center">
+                  <div class="fifa-card-emblem">
+                    <span class="fifa-card-emblem-pos">10</span>
+                  </div>
+                </div>
+                <div class="fifa-card-bottom">
+                  <div class="fifa-card-name font-mono">AI AGENTS</div>
+                  <div class="fifa-card-divider"></div>
+                  <div class="fifa-card-stats">
+                    <div class="fifa-stat font-mono"><span>LLM</span><span>87</span></div>
+                    <div class="fifa-stat font-mono"><span>AGT</span><span>87</span></div>
+                    <div class="fifa-stat font-mono"><span>ORC</span><span>84</span></div>
+                  </div>
+                </div>
+                <div class="fifa-card-hint font-mono">click to flip</div>
+              </div>
+              <div class="fifa-card-back">
+                <div class="fifa-back-pos font-mono">CAM · #10 · ★ STAR</div>
+                <h3 class="fifa-back-title font-serif">Autonomous AI Agents &amp; Orchestration</h3>
+                <p class="fifa-back-desc font-mono">Creative nucleus. Multi-agent swarms, Model Context Protocol, tool-augmented sandboxes, vector embeddings.</p>
+                <div class="fifa-back-pills">
+                  <span class="fifa-pill">AI Agents</span>
+                  <span class="fifa-pill">MCP</span>
+                  <span class="fifa-pill">ADK</span>
+                  <span class="fifa-pill">Antigravity</span>
+                  <span class="fifa-pill">LangChain</span>
+                  <span class="fifa-pill">Prompt Eng.</span>
+                </div>
+                <div class="fifa-back-hint font-mono">click to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: ST — Gold -->
+          <div class="fifa-card fifa-card--gold" data-pos="st" onclick="flipCard(this)" tabindex="0" role="button" aria-label="Toggle Python & C++ player card">
+            <div class="fifa-card-inner">
+              <div class="fifa-card-front">
+                <div class="fifa-card-shine"></div>
+                <div class="fifa-card-top">
+                  <div class="fifa-card-rating font-serif">85</div>
+                  <div class="fifa-card-pos font-mono">ST</div>
+                </div>
+                <div class="fifa-card-center">
+                  <div class="fifa-card-emblem">
+                    <span class="fifa-card-emblem-pos">ST</span>
+                  </div>
+                </div>
+                <div class="fifa-card-bottom">
+                  <div class="fifa-card-name font-mono">PYTHON / C++</div>
+                  <div class="fifa-card-divider"></div>
+                  <div class="fifa-card-stats">
+                    <div class="fifa-stat font-mono"><span>DSA</span><span>84</span></div>
+                    <div class="fifa-stat font-mono"><span>PY</span><span>86</span></div>
+                    <div class="fifa-stat font-mono"><span>OPT</span><span>82</span></div>
+                  </div>
+                </div>
+                <div class="fifa-card-hint font-mono">click to flip</div>
+              </div>
+              <div class="fifa-card-back">
+                <div class="fifa-back-pos font-mono">ST · #09</div>
+                <h3 class="fifa-back-title font-serif">High-Impact Computational Engineering</h3>
+                <p class="fifa-back-desc font-mono">Clinical problem-solving. Python, C++, Data Structures &amp; Algorithms, rapid conversion of complex problems into clean code.</p>
+                <div class="fifa-back-pills">
+                  <span class="fifa-pill">Python</span>
+                  <span class="fifa-pill">C++</span>
+                  <span class="fifa-pill">DSA</span>
+                  <span class="fifa-pill">OOP</span>
+                  <span class="fifa-pill">Codeforces</span>
+                  <span class="fifa-pill">LeetCode</span>
+                </div>
+                <div class="fifa-back-hint font-mono">click to flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: RW — Gold -->
+          <div class="fifa-card fifa-card--gold" data-pos="rw" onclick="flipCard(this)" tabindex="0" role="button" aria-label="Toggle JavaScript & Full Stack player card">
+            <div class="fifa-card-inner">
+              <div class="fifa-card-front">
+                <div class="fifa-card-shine"></div>
+                <div class="fifa-card-top">
+                  <div class="fifa-card-rating font-serif">81</div>
+                  <div class="fifa-card-pos font-mono">RW</div>
+                </div>
+                <div class="fifa-card-center">
+                  <div class="fifa-card-emblem">
+                    <span class="fifa-card-emblem-pos">RW</span>
+                  </div>
+                </div>
+                <div class="fifa-card-bottom">
+                  <div class="fifa-card-name font-mono">JS / FULL-STACK</div>
+                  <div class="fifa-card-divider"></div>
+                  <div class="fifa-card-stats">
+                    <div class="fifa-stat font-mono"><span>API</span><span>83</span></div>
+                    <div class="fifa-stat font-mono"><span>JS</span><span>81</span></div>
+                    <div class="fifa-stat font-mono"><span>UI</span><span>78</span></div>
+                  </div>
+                </div>
+                <div class="fifa-card-hint font-mono">click to flip</div>
+              </div>
+              <div class="fifa-card-back">
+                <div class="fifa-back-pos font-mono">RW · #07</div>
+                <h3 class="fifa-back-title font-serif">Full-Stack Architecture &amp; Modern Web</h3>
+                <p class="fifa-back-desc font-mono">Pace, precision, fluid interfaces. High-performance, accessible web platforms bridging complex backends with intuitive design.</p>
+                <div class="fifa-back-pills">
+                  <span class="fifa-pill">JavaScript</span>
+                  <span class="fifa-pill">HTML5 &amp; CSS</span>
+                  <span class="fifa-pill">Django / DRF</span>
+                  <span class="fifa-pill">REST APIs</span>
+                  <span class="fifa-pill">Glassmorphism</span>
+                </div>
+                <div class="fifa-back-hint font-mono">click to flip back</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.fifa-grid -->
+
+        <div class="fifa-grid-hint font-mono">// Click any card to inspect player stats &amp; stack — multiple cards can be flipped simultaneously</div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- ==========================================================================
+         3. MATCH HIGHLIGHTS (Project Cards)
+         ========================================================================== -->
+    <section id="highlights" class="section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 9. SQL Query doodle -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-neg" style="top: 4%; left: 3%;">
+          <span>SELECT * FROM trophies WHERE rank = 1;</span>
+        </div>
+
+        <!-- 10. Twisted patch cable with ground -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-pos" style="top: 48%; right: 3%;">
+          <svg class="doodle-svg" width="46" height="20" viewBox="0 0 46 20">
+            <path d="M 2 10 Q 8 2 14 10 T 26 10 T 36 10" stroke-width="1.4"/>
+            <line x1="36" y1="10" x2="42" y2="10" stroke-width="1.4"/>
+            <line x1="42" y1="5" x2="42" y2="15" stroke-width="1.4"/>
+            <line x1="44" y1="7" x2="44" y2="13" stroke-width="1.4"/>
+          </svg>
+          <span>// zero latency</span>
+        </div>
+
+        <!-- 11. Minimalist Wireframe Soccer Ball + VAR -->
+        <div class="bg-doodle doodle-rot-neg" style="bottom: 4%; left: 3%;">
+          <svg class="doodle-svg" width="22" height="22" viewBox="0 0 22 22">
+            <circle cx="11" cy="11" r="9" stroke-width="1.4"/>
+            <polygon points="11,6 15,9 13,14 9,14 7,9" stroke-width="1.2"/>
+            <line x1="11" y1="2" x2="11" y2="6" stroke-width="1.2"/>
+            <line x1="19" y1="8" x2="15" y2="9" stroke-width="1.2"/>
+            <line x1="16" y1="18" x2="13" y2="14" stroke-width="1.2"/>
+            <line x1="6" y1="18" x2="9" y2="14" stroke-width="1.2"/>
+            <line x1="3" y1="8" x2="7" y2="9" stroke-width="1.2"/>
+          </svg>
+          <span class="doodle-pun">VAR: GOAL CONFIRMED ✓</span>
+        </div>
+
+        <!-- 12. Clean sheet git commit -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-pos" style="bottom: 5%; right: 3%;">
+          <span class="doodle-kbd">git commit -m "clean sheet"</span>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-label">
+            <span>// 02</span>
+            <span>MATCH HIGHLIGHTS</span>
+            <span class="signal-radar-tag font-mono" style="margin-left: 0.6rem;">
+              <span>⚡</span>
+              <span>TELEMETRY: 3/3 PROD FIXTURES</span>
+            </span>
+          </div>
+          <h2 class="section-title font-serif">Featured Projects &amp; Match Reports</h2>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Student_mate -->
+          <article class="match-card glass-panel tilt-card">
+            <!-- Single-Stroke Innovation Lightbulb Signal -->
+            <div class="stroke-signaling single-stroke-figure" style="top: -24px; left: 14px;">
+              <svg class="single-stroke-svg" width="26" height="26" viewBox="0 0 26 26">
+                <path d="M 9 18 L 17 18 M 10 21 L 16 21 M 7 14 C 5 12, 4 9, 4 6 C 4 2.5, 8 1, 13 1 C 18 1, 22 2.5, 22 6 C 22 9, 21 12, 19 14 L 19 16 L 7 16 Z" stroke-width="1.4"/>
+                <line x1="13" y1="1" x2="13" y2="-1" stroke-width="1.3"/>
+              </svg>
+              <span class="signal-callout-text font-mono">// core_innovation</span>
+            </div>
+
+            <div class="match-card-screenshot">
+              <img src="assets/studentmate_screenshot.jpg" alt="Student_mate app interface showing AI chat with task list" class="project-screenshot" loading="lazy">
+              <div class="screenshot-overlay">
+                <span class="screenshot-label font-mono">LIVE PREVIEW</span>
+              </div>
+            </div>
+            <div class="match-card-top">
+              <div class="match-fixture-bar">
+                <span>FIXTURE: FEB 2026</span>
+                <span class="motm-badge">★ MOTM: PERSISTENT MEMORY</span>
+              </div>
+              <h3 class="match-title font-serif">Student_mate</h3>
+              
+              <div class="match-stat-callout">
+                <div class="stat-headline">68 Organic Users</div>
+                <div class="stat-subtext">Generative AI Concierge Agent</div>
+              </div>
+
+              <p class="match-desc">
+                An intelligent student assistant featuring stateful multi-turn memory, dynamic academic calendar scheduling, and context-aware task prioritization powered by LLM tool calling.
+              </p>
+            </div>
+
+            <div class="match-card-bottom">
+              <div class="tactical-stack-pills" style="margin-bottom: 1.25rem;">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">LLM APIs</span>
+                <span class="stack-pill">Agentic Memory</span>
+                <span class="stack-pill">FastAPI</span>
+              </div>
+              <div class="match-card-footer">
+                <span class="font-mono text-xs text-muted">Status: Deployed</span>
+                <a href="https://github.com/AbhishekPandey-10/Student_mate" target="_blank" rel="noopener noreferrer" class="match-link font-mono">
+                  <span>Match Tape (GitHub)</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Library Management System -->
+          <article class="match-card glass-panel tilt-card">
+            <div class="match-card-screenshot">
+              <img src="assets/library_mgmt_screenshot.jpg" alt="Library Management System CLI interface with MySQL records" class="project-screenshot" loading="lazy">
+              <div class="screenshot-overlay">
+                <span class="screenshot-label font-mono">LIVE PREVIEW</span>
+              </div>
+            </div>
+            <div class="match-card-top">
+              <div class="match-fixture-bar">
+                <span>FIXTURE: SEP 2025</span>
+                <span class="motm-badge">★ MOTM: ACID TRANSACTIONS</span>
+              </div>
+              <h3 class="match-title font-serif">Library Management System</h3>
+              
+              <div class="match-stat-callout">
+                <div class="stat-headline">6 GitHub Stars</div>
+                <div class="stat-subtext">CLI &amp; Relational Database Core</div>
+              </div>
+
+              <p class="match-desc">
+                High-reliability terminal-based system built with Python and MySQL. Features strict transaction safety, automated fine calculation, concurrency controls, and role-based access management.
+              </p>
+            </div>
+
+            <div class="match-card-bottom">
+              <div class="tactical-stack-pills" style="margin-bottom: 1.25rem;">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">MySQL</span>
+                <span class="stack-pill">Database Normalization</span>
+                <span class="stack-pill">CLI Engine</span>
+              </div>
+              <div class="match-card-footer">
+                <span class="font-mono text-xs text-muted">Status: Open Source</span>
+                <a href="https://github.com/AbhishekPandey-10/library-management-system" target="_blank" rel="noopener noreferrer" class="match-link font-mono">
+                  <span>Match Tape (GitHub)</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AgriHelp -->
+          <article class="match-card glass-panel tilt-card">
+            <div class="match-card-screenshot">
+              <img src="assets/agrihelp_screenshot.jpg" alt="AgriHelp dashboard showing crop advisory, weather and mandi rates" class="project-screenshot" loading="lazy">
+              <div class="screenshot-overlay">
+                <span class="screenshot-label font-mono">LIVE PREVIEW</span>
+              </div>
+            </div>
+            <div class="match-card-top">
+              <div class="match-fixture-bar">
+                <span>FIXTURE: JUL 2026</span>
+                <span class="motm-badge">★ MOTM: EDGE DIAGNOSTICS</span>
+              </div>
+              <h3 class="match-title font-serif">AgriHelp</h3>
+              
+              <div class="match-stat-callout">
+                <div class="stat-headline">Farmer Support Hub</div>
+                <div class="stat-subtext">Web Platform &amp; Advisory Mesh</div>
+              </div>
+
+              <p class="match-desc">
+                A localized agricultural advisory web app connecting farmers to automated crop disease diagnostics, weather telemetry, and real-time mandi market rates.
+              </p>
+            </div>
+
+            <div class="match-card-bottom">
+              <div class="tactical-stack-pills" style="margin-bottom: 1.25rem;">
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">Modern Web Stack</span>
+                <span class="stack-pill">REST APIs</span>
+                <span class="stack-pill">CSS Glass</span>
+              </div>
+              <div class="match-card-footer">
+                <span class="font-mono text-xs text-muted">Status: Prototype</span>
+                <a href="https://github.com/AbhishekPandey-10/AgriHelp" target="_blank" rel="noopener noreferrer" class="match-link font-mono">
+                  <span>Match Tape (GitHub)</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. TRANSFER WINDOW & TROPHY CABINET (Chronological Bento Grid)
+         ========================================================================== -->
+    <section id="transfers" class="section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 13. Curving Arrow -->
+        <div class="bg-doodle doodle-rot-neg" style="top: 4%; right: 4%;">
+          <svg class="doodle-svg" width="30" height="18" viewBox="0 0 30 18">
+            <path d="M 2 14 C 10 2, 20 4, 26 12" stroke-width="1.4"/>
+            <polyline points="21,12 27,13 25,7" stroke-width="1.4"/>
+          </svg>
+          <span class="doodle-pun">golden boot progression ⤷</span>
+        </div>
+
+        <!-- 14. Referee Whistle -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-pos" style="top: 45%; left: 3%;">
+          <svg class="doodle-svg" width="30" height="20" viewBox="0 0 30 20">
+            <path d="M 2 6 L 14 6 A 6 6 0 1 1 14 16 L 2 16 Z" stroke-width="1.4"/>
+            <circle cx="16" cy="11" r="2" fill="currentColor"/>
+            <path d="M 24 6 C 26 9 26 13 24 16" stroke-width="1.3" stroke-dasharray="1.5 1.5"/>
+            <path d="M 27 4 C 30 8 30 14 27 18" stroke-width="1.3" stroke-dasharray="1.5 1.5"/>
+          </svg>
+          <span>// match official verified</span>
+        </div>
+
+        <!-- 15. Shell script run -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-neg" style="bottom: 4%; right: 4%;">
+          <span>$ chmod +x play_beautiful.sh</span>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-label">
+            <span>// 03</span>
+            <span>TRANSFER WINDOW &amp; HONOURS</span>
+            <span class="signal-radar-tag font-mono" style="margin-left: 0.6rem;">
+              <span>🏆</span>
+              <span>SQUAD DEPTH: +7 CAPS</span>
+            </span>
+          </div>
+          <h2 class="section-title font-serif">Hackathons, Caps &amp; Certifications</h2>
+        </div>
+
+        <!-- Chronological Bento Grid (Asymmetric 3-Column Layout) -->
+        <div class="bento-trophy-grid">
+          
+          <!-- 1. Sep 2025: Gear-Up 4.0 Hackathon (1 col) -->
+          <div class="bento-card bento-card--sm glass-panel">
+            <div class="bento-card-header">
+              <span class="bento-timeline-badge font-mono">01 · SEP 2025</span>
+              <span class="bento-type-tag bento-type--hackathon font-mono">HACKATHON</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">Gear-Up 4.0</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">36-Hour National Sprint · LPU</p>
+              <p class="bento-card-desc">
+                Captained a 4-developer squad through an intense 36-hour sprint, architecting full-stack systems under strict time constraints.
+              </p>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill font-mono">★ TEAM LEAD</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #01</span>
+            </div>
+          </div>
+
+          <!-- 2. Dec 2025: Google AI Agents Intensive (2 cols - Featured Hero) -->
+          <div class="bento-card bento-card--lg glass-panel bento-card--featured-google">
+            <div class="bento-card-header">
+              <div class="bento-header-left">
+                <span class="bento-timeline-badge font-mono">02 · DEC 2025</span>
+                <span class="bento-type-tag bento-type--cert font-mono">GOOGLE &amp; KAGGLE</span>
+              </div>
+              <span class="bento-status-pill font-mono">✓ CERTIFIED</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">Google AI Agents Intensive</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">Kaggle Learn 5-Day Intensive Specialization</p>
+              <p class="bento-card-desc">
+                Comprehensive specialization in autonomous multi-agent systems, persistent context memory architectures, MCP integration patterns, and enterprise generative agent orchestration.
+              </p>
+              <div class="bento-card-tags">
+                <span class="tag-chip font-mono">Multi-Agent Systems</span>
+                <span class="tag-chip font-mono">Tool Calling</span>
+                <span class="tag-chip font-mono">Agentic Memory</span>
+                <span class="tag-chip font-mono">Kaggle Verified</span>
+              </div>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill bento-role--cert font-mono">✓ CERTIFIED SPECIALIST</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #02</span>
+            </div>
+          </div>
+
+          <!-- 3. Feb 2026: AI Fusion Prompt Hackathon (2 cols - Featured Captain Hero) -->
+          <div class="bento-card bento-card--lg glass-panel bento-card--featured-lead">
+            <div class="bento-card-header">
+              <div class="bento-header-left">
+                <span class="bento-timeline-badge font-mono">03 · FEB 2026</span>
+                <span class="bento-type-tag bento-type--hackathon font-mono">IIT ROPAR · ADVITIYA</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg class="single-stroke-svg" width="22" height="15" viewBox="0 0 22 15" style="color: var(--accent-terracotta);">
+                  <path d="M 2 13 L 2 4 L 7 8 L 11 2 L 15 8 L 20 4 L 20 13 Z" stroke-width="1.4"/>
+                </svg>
+                <span class="bento-status-pill bento-status--trophy font-mono">🏆 MATCHDAY CAPTAIN</span>
+              </div>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">AI Fusion Prompt Hackathon</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">Advitiya '26 · Indian Institute of Technology Ropar</p>
+              <p class="bento-card-desc">
+                Spearheaded Team <em>Codeformers</em> as Lead Developer. Architected generative prompt optimization pipelines, prompt chaining mechanisms, and resilient failure recovery under rapid-fire competitive evaluation.
+              </p>
+              <div class="bento-card-tags">
+                <span class="tag-chip font-mono">Prompt Engineering</span>
+                <span class="tag-chip font-mono">LLM Chaining</span>
+                <span class="tag-chip font-mono">Team Leadership</span>
+                <span class="tag-chip font-mono">IIT Ropar</span>
+              </div>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill bento-role--lead font-mono">★ TEAM LEAD (CODEFORMERS)</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #03</span>
+            </div>
+          </div>
+
+          <!-- 4. Mar 2026: Agrithon on Campus (1 col) -->
+          <div class="bento-card bento-card--sm glass-panel">
+            <div class="bento-card-header">
+              <span class="bento-timeline-badge font-mono">04 · MAR 2026</span>
+              <span class="bento-type-tag bento-type--hackathon font-mono">HACKATHON</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">Agrithon on Campus</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">Lovely Professional University · Phagwara</p>
+              <p class="bento-card-desc">
+                Directed product architecture for automated rural decision support, engineered offline caching with service workers, and structured multi-language interfaces.
+              </p>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill font-mono">★ TEAM LEAD</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #04</span>
+            </div>
+          </div>
+
+          <!-- 5. Apr 2026: Times Critical Thinking Championship (1 col) -->
+          <div class="bento-card bento-card--sm glass-panel">
+            <div class="bento-card-header">
+              <span class="bento-timeline-badge font-mono">05 · APR 2026</span>
+              <span class="bento-type-tag bento-type--cert font-mono">CHAMPIONSHIP</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">Critical Thinking Championship</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">The Times of India · National League</p>
+              <p class="bento-card-desc">
+                Awarded National Level Certificate for exceptional deductive reasoning, algorithmic problem framing, and analytical problem-solving.
+              </p>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill bento-role--cert font-mono">✓ NATIONAL CERTIFICATE</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #05</span>
+            </div>
+          </div>
+
+          <!-- 6. Jul 2026: AI Agents Vibe Coding (1 col) -->
+          <div class="bento-card bento-card--sm glass-panel">
+            <div class="bento-card-header">
+              <span class="bento-timeline-badge font-mono">06 · JUL 2026</span>
+              <span class="bento-type-tag bento-type--cert font-mono">SPECIALIZATION</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">AI Agents: Vibe Coding</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">Kaggle Learn Specialization</p>
+              <p class="bento-card-desc">
+                Honors credential in conversational code synthesis, generative development environments, and automated pair-programming workflows.
+              </p>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill bento-role--cert font-mono">✓ SPECIALIZATION HONORS</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #06</span>
+            </div>
+          </div>
+
+          <!-- 7. 2026: GSSoC 2026 & YUKTI (1 col) -->
+          <div class="bento-card bento-card--sm glass-panel">
+            <div class="bento-card-header">
+              <span class="bento-timeline-badge font-mono">07 · 2026</span>
+              <span class="bento-type-tag bento-type--opensource font-mono">OPEN SOURCE</span>
+            </div>
+            <div class="bento-card-body">
+              <h3 class="bento-card-title font-serif">GSSoC &amp; YUKTI</h3>
+              <p class="bento-card-venue font-mono text-xs text-muted">GirlScript &amp; MoE Innovation Registry</p>
+              <p class="bento-card-desc">
+                Contributing pull requests to production open-source codebases; indexed on the National Innovation &amp; Startup Repository (YUKTI).
+              </p>
+            </div>
+            <div class="bento-card-footer">
+              <span class="bento-role-pill bento-role--open font-mono">⌥ OPEN CONTRIBUTOR</span>
+              <span class="bento-cap-num font-mono text-xs text-muted">CAP #07</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SEASON STATS (Passing Channels & Computational Fundamentals)
+         ========================================================================== -->
+    <section id="season-stats" class="section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 16. Hanging Patch Cord Cable -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-neg" style="top: 5%; left: 3%;">
+          <svg class="doodle-svg" width="52" height="22" viewBox="0 0 52 22">
+            <circle cx="5" cy="11" r="3" stroke-width="1.4"/>
+            <path d="M 8 11 C 16 2, 26 20, 36 11 C 41 6, 45 14, 48 11" stroke-width="1.4"/>
+            <circle cx="49" cy="11" r="2" fill="currentColor"/>
+          </svg>
+          <span>// bus: 10 Gbps</span>
+        </div>
+
+        <!-- 17. 404 joke -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-pos" style="top: 46%; right: 3%;">
+          <span>// 404: offside trap not found</span>
+        </div>
+
+        <!-- 18. Coffee to clean sheet equation -->
+        <div class="bg-doodle doodle-rot-neg" style="bottom: 5%; left: 4%;">
+          <span class="doodle-pun">coffee ➔ bytecode ➔ clean sheet ⚡</span>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-label">
+            <span>// 04</span>
+            <span>SEASON STATS</span>
+          </div>
+          <h2 class="section-title font-serif">Passing Channels &amp; Season Telemetry</h2>
+        </div>
+
+        <div class="season-stats-layout">
+          
+          <!-- Interactive SVG Passing Channels Network -->
+          <div class="tactics-network-board">
+            <div class="network-board-header font-mono text-xs">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span>● PASSING MATRIX</span>
+                <span class="signal-radar-tag font-mono" style="font-size: 0.65rem; padding: 0.15rem 0.45rem;">
+                  <span>((( • )))</span>
+                  <span>2.4 GHz MESH</span>
+                </span>
+              </div>
+              <span>// HOVER NODES TO TRACE LANES</span>
+            </div>
+            <svg class="tactics-svg-mesh" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Pass Connection Lines -->
+              <line x1="80" y1="80" x2="250" y2="80" class="tactics-link-line" data-nodes="Python,AI Agents"/>
+              <line x1="250" y1="80" x2="420" y2="80" class="tactics-link-line" data-nodes="AI Agents,MCP/ADK"/>
+              <line x1="80" y1="80" x2="160" y2="220" class="tactics-link-line" data-nodes="Python,SQL"/>
+              <line x1="250" y1="80" x2="340" y2="220" class="tactics-link-line" data-nodes="AI Agents,DSA/C++"/>
+              <line x1="160" y1="220" x2="340" y2="220" class="tactics-link-line" data-nodes="SQL,DSA/C++"/>
+              <line x1="420" y1="80" x2="340" y2="220" class="tactics-link-line" data-nodes="MCP/ADK,DSA/C++"/>
+
+              <!-- Node 1: Python Core -->
+              <g class="tactics-node" onmouseenter="highlightNode('Python')" onmouseleave="resetHighlight()">
+                <circle cx="80" cy="80" r="30" class="tactics-circle"/>
+                <text x="80" y="80" font-family="'JetBrains Mono'" font-size="10.5" font-weight="700" class="tactics-text" text-anchor="middle" dominant-baseline="central">Python</text>
+              </g>
+
+              <!-- Node 2: AI Agents -->
+              <g class="tactics-node" onmouseenter="highlightNode('AI Agents')" onmouseleave="resetHighlight()">
+                <circle cx="250" cy="80" r="35" class="tactics-circle tactics-circle--featured"/>
+                <text x="250" y="80" font-family="'JetBrains Mono'" font-size="11" font-weight="700" class="tactics-text" text-anchor="middle" dominant-baseline="central">AI Agents</text>
+              </g>
+
+              <!-- Node 3: MCP & ADK -->
+              <g class="tactics-node" onmouseenter="highlightNode('MCP/ADK')" onmouseleave="resetHighlight()">
+                <circle cx="420" cy="80" r="32" class="tactics-circle"/>
+                <text x="420" y="80" font-family="'JetBrains Mono'" font-size="10" font-weight="700" class="tactics-text" text-anchor="middle" dominant-baseline="central">MCP / ADK</text>
+              </g>
+
+              <!-- Node 4: SQL & Database -->
+              <g class="tactics-node" onmouseenter="highlightNode('SQL')" onmouseleave="resetHighlight()">
+                <circle cx="160" cy="220" r="30" class="tactics-circle"/>
+                <text x="160" y="220" font-family="'JetBrains Mono'" font-size="10" font-weight="700" class="tactics-text" text-anchor="middle" dominant-baseline="central">SQL / DB</text>
+              </g>
+
+              <!-- Node 5: DSA & C++ -->
+              <g class="tactics-node" onmouseenter="highlightNode('DSA/C++')" onmouseleave="resetHighlight()">
+                <circle cx="340" cy="220" r="30" class="tactics-circle"/>
+                <text x="340" y="220" font-family="'JetBrains Mono'" font-size="10" font-weight="700" class="tactics-text" text-anchor="middle" dominant-baseline="central">DSA / C++</text>
+              </g>
+            </svg>
+            <div class="network-board-footer font-mono text-xs text-muted">
+              <code>Architecture: Python backend ↔ Autonomous agents ↔ ACID MySQL ↔ Algorithmic DSA</code>
+            </div>
+          </div>
+
+          <!-- Essential Season Stats Cards (Zero Fluff, High Impact) -->
+          <div class="season-stats-grid">
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="8.76" id="stat-cgpa">8.76</div>
+              <div class="stat-label-text font-mono">Academic CGPA</div>
+              <div class="stat-pun font-mono">// B.Tech CSE @ LPU</div>
+            </div>
+
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="82" id="stat-commits">82</div>
+              <div class="stat-label-text font-mono">Contributions '26</div>
+              <div class="stat-pun font-mono">// git push --force consistency</div>
+            </div>
+
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="11" id="stat-repos">11</div>
+              <div class="stat-label-text font-mono">Public Repositories</div>
+              <div class="stat-pun font-mono">// Python, JS, AI systems</div>
+            </div>
+
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="7" id="stat-stars">★ 7</div>
+              <div class="stat-label-text font-mono">Total Stars Earned</div>
+              <div class="stat-pun font-mono">// 6 on library-mgmt CLI</div>
+            </div>
+
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="3" id="stat-hackathons">3+</div>
+              <div class="stat-label-text font-mono">Hackathons Captained</div>
+              <div class="stat-pun font-mono">// IIT Ropar, Agrithon, Gear-Up</div>
+            </div>
+
+            <div class="stat-counter-card glass-panel">
+              <div class="stat-number" data-target="68" id="stat-users">68</div>
+              <div class="stat-label-text font-mono">Organic Live Users</div>
+              <div class="stat-pun font-mono">// Student_mate agent trial</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="season-stats-footer">
+          <div class="font-mono text-xs text-muted">
+            <code>telemetry: synced with GitHub / AbhishekPandey-10 &amp; University Records</code>
+          </div>
+          <a href="https://github.com/AbhishekPandey-10" target="_blank" rel="noopener noreferrer" class="scoreboard-link font-mono">
+            <span>View Complete GitHub Profile</span>
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. EXTRA TIME (Contact & Closing)
+         ========================================================================== -->
+    <section id="extratime" class="section">
+      <!-- Background Tactical & Dev Doodles Layer -->
+      <div class="doodle-layer" aria-hidden="true">
+        <!-- 19. Tactical talk arrow -->
+        <div class="bg-doodle doodle-rot-pos" style="top: 16%; left: 3%;">
+          <svg class="doodle-svg" width="28" height="20" viewBox="0 0 28 20">
+            <path d="M 4 4 Q 14 16 22 13" stroke-width="1.4"/>
+            <polyline points="18,10 23,13 19,16" stroke-width="1.4"/>
+          </svg>
+          <span>scouting talks ⤷</span>
+        </div>
+
+        <!-- 20. Full-Time terminal message -->
+        <div class="bg-doodle bg-doodle--terracotta doodle-rot-neg" style="top: 18%; right: 3%;">
+          <span>console.log("FT: 90+6' ⚽");</span>
+        </div>
+
+        <!-- 21. Exit Pitch keycap -->
+        <div class="bg-doodle bg-doodle--sage doodle-rot-pos" style="bottom: 10%; right: 5%;">
+          <span class="doodle-kbd">Esc</span>
+          <span class="doodle-pun">// end of matchday</span>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="extra-time-card glass-panel">
+          <div class="section-label" style="justify-content: center;">
+            <span>// 05</span>
+            <span>EXTRA TIME</span>
+          </div>
+
+          <h2 class="extra-time-headline font-serif">
+            Added time — let’s connect.
+          </h2>
+
+          <p class="extra-time-sub">
+            Whether it's an engineering role, multi-agent AI research, or building the next generation of football analytics tools.
+          </p>
+
+          <!-- Single-Stroke CV Callout Signaling -->
+          <div class="stroke-signaling" style="position: relative; margin: 0 auto 1.25rem; justify-content: center;">
+            <svg class="single-stroke-svg" width="34" height="20" viewBox="0 0 34 20" style="color: var(--accent-terracotta);">
+              <path d="M 4 2 C 14 2, 22 6, 26 14" stroke-width="1.5"/>
+              <polyline points="21,12 26,15 29,9" stroke-width="1.5"/>
+            </svg>
+            <span class="signal-callout-text font-mono">one-click verified PDF dossier ⤷</span>
+          </div>
+
+          <div class="contact-channels-grid">
+            <a href="assets/Abhishek_Pandey_CV.pdf" download="Abhishek_Pandey_CV.pdf" target="_blank" class="contact-pill contact-pill--highlight magnetic-btn">
+              <span>↓</span>
+              <span>Download CV (PDF)</span>
+            </a>
+
+            <a href="opportunities.html" class="contact-pill contact-pill--accent magnetic-btn">
+              <span>★</span>
+              <span>Open for Opportunities ↗</span>
+            </a>
+
+            <button class="contact-pill magnetic-btn" onclick="copyContact('abhishekpandey1951@gmail.com', 'Email')">
+              <span>✉</span>
+              <span>abhishekpandey1951@gmail.com</span>
+            </button>
+
+            <button class="contact-pill magnetic-btn" onclick="copyContact('+919118209378', 'Phone')">
+              <span>☏</span>
+              <span>+91-9118209378</span>
+            </button>
+
+            <a href="https://github.com/AbhishekPandey-10" target="_blank" rel="noopener noreferrer" class="contact-pill magnetic-btn">
+              <span>⌥</span>
+              <span>GitHub / AbhishekPandey-10</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/abhishek-pandey-121064313/" target="_blank" rel="noopener noreferrer" class="contact-pill magnetic-btn">
+              <span>↗</span>
+              <span>LinkedIn / Abhishek-Pandey</span>
+            </a>
+          </div>
+
+          <div class="font-mono text-xs text-muted">
+            <code>404: Comfort zone not found · Ready for the next kickoff</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="pitch-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <span>Abhishek Pandey</span>
+          <span>·</span>
+          <span>B.Tech CSE @ LPU</span>
+        </div>
+        <div>
+          <code>console.log("full-time");</code>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
